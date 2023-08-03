@@ -9,16 +9,16 @@
             <p>XXXX</p>
             <p>XXXX</p>
             <p>XXXX</p>
-            <p>1245</p>
+            <p>{{accountData.card.number }}</p>
         </div>
     </div>
     
     <div class="card-footer text-xl flex justify-around h-1/3">
-        <p>Olá, Nome</p>
-        <p>Ag 0000</p>
-        <p>CC 11111</p>
+        <p>Olá, {{accountData.name}}</p>
+        <p>Ag {{accountData.account.agency}}</p>
+        <p>CC {{accountData.account.number}}</p>
     </div>
     <div class="card-limit flex justify-end">
-		<p>Limit: 1000</p>
+		<p>Limit: {{accountData.card.limit}}</p>
 	</div>
 </div>

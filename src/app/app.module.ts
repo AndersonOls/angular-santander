@@ -13,6 +13,7 @@ import { BellIconComponent } from 'src/assets/svgs/bell-icon/bell-icon.component
 import { MoneyIconComponent } from 'src/assets/svgs/money-icon/money-icon-component';
 import { SearchLogoComponent } from 'src/assets/svgs/search-icon/search-icon.component';
 import { UserIconComponent } from 'src/assets/svgs/user-icon/user-icon.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,11 +29,13 @@ import { UserIconComponent } from 'src/assets/svgs/user-icon/user-icon.component
     MoneyIconComponent,
     SearchLogoComponent,
     UserIconComponent,
+  
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
